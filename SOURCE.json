@@ -1,0 +1,55 @@
+{
+  "repository": "aviorstudio/gd-playwright",
+  "revision": "d48eb8b5edb8621782ad09d9cccced7eb79f38a8",
+  "license": "MIT",
+  "files": [
+    {
+      "source_repository": "aviorstudio/gd-playwright",
+      "source_revision": "d48eb8b5edb8621782ad09d9cccced7eb79f38a8",
+      "source_path": "js/index.js",
+      "destination_repository": "aviorstudio/gd-playwright-js",
+      "destination_path": "src/index.js",
+      "sha256": "cbb4eccaaa42902fb9b62b227489a0cb210075fbfa92dd6648e0fa00e9d5f829"
+    },
+    {
+      "source_repository": "aviorstudio/gd-playwright",
+      "source_revision": "d48eb8b5edb8621782ad09d9cccced7eb79f38a8",
+      "source_path": "js/index.test.js",
+      "destination_repository": "aviorstudio/gd-playwright-js",
+      "destination_path": "tests/index.test.js",
+      "sha256": "8545d799ad7f74cd4e41ba67a5aea0e56ce0eed4b14428bcf36f67e1fffabe04"
+    },
+    {
+      "source_repository": "aviorstudio/gd-playwright",
+      "source_revision": "d48eb8b5edb8621782ad09d9cccced7eb79f38a8",
+      "source_path": "js/package.json",
+      "destination_repository": "aviorstudio/gd-playwright-js",
+      "destination_path": "package.json",
+      "sha256": "2f391eebf0827a1c7e28f9a9192ec8ac8de1ee8c5dd66cb697ecd0657c0d87c9"
+    },
+    {
+      "source_repository": "aviorstudio/gd-playwright",
+      "source_revision": "d48eb8b5edb8621782ad09d9cccced7eb79f38a8",
+      "source_path": "LICENSE",
+      "destination_repository": "aviorstudio/gd-playwright-js",
+      "destination_path": "LICENSE",
+      "sha256": "a03ff68fb0090d2593c6e26cd631a9ba4c248a036dcd439cdc928e51ba2a84ff"
+    },
+    {
+      "source_repository": "aviorstudio/gd-playwright",
+      "source_revision": "d48eb8b5edb8621782ad09d9cccced7eb79f38a8",
+      "source_path": ".github/scripts/check-documentation.py",
+      "destination_repository": "aviorstudio/gd-playwright-js",
+      "destination_path": ".github/scripts/check-documentation.py",
+      "sha256": "52bb27c332a3d9df28f6a86c824875b4696871aea48bb72c4803c33eb14a254c"
+    },
+    {
+      "source_repository": "aviorstudio/gd-playwright",
+      "source_revision": "d48eb8b5edb8621782ad09d9cccced7eb79f38a8",
+      "source_path": ".github/workflows/documentation-policy.yml",
+      "destination_repository": "aviorstudio/gd-playwright-js",
+      "destination_path": ".github/workflows/documentation-policy.yml",
+      "sha256": "7420c93d2c440bc18b9cb59f0894aba7f68066122a5a24f459f5e897303199c0"
+    }
+  ]
+}

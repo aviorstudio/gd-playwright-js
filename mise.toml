@@ -1,0 +1,26 @@
+[tools]
+python = "3.13.11"
+node = "24.18.1"
+bun = "1.4.1"
+actionlint = "1.7.12"
+[env]
+TOOLS_ROOT = "{{ get_env(name='TOOLS_ROOT', default=config_root ~ '/.ci-tools') }}"
+PYTHONDONTWRITEBYTECODE = "1"
+npm_config_cache = "{{ config_root }}/.artifacts/npm-cache"
+[tasks.install]
+run = "node --version && bun --version"
+[tasks.lint]
+run = ["node --check src/index.js", "node --check tests/index.test.js", "actionlint"]
+[tasks.unit]
+run = "bun test tests"
+[tasks.test]
+run = "bun test tests"
+[tasks.build]
+run = "python3 scripts/package.py"
+[tasks.artifact-check]
+run = "python3 scripts/verify-package.py"
+depends = ["build"]
+[tasks.clean]
+run = "python3 \"$TOOLS_ROOT/helpers/clean.py\" --path dist"
+[tasks.check]
+run = [{task = "install"}, {task = "lint"}, {task = "test"}, {task = "artifact-check"}]

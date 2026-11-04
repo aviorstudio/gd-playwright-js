@@ -1,0 +1,31 @@
+{
+  "name": "@aviorstudio/gd-playwright",
+  "version": "0.1.0",
+  "description": "Playwright input helpers for active Godot web games",
+  "type": "module",
+  "exports": "./src/index.js",
+  "files": [
+    "src/index.js",
+    "README.md",
+    "LICENSE",
+    "SOURCE.json"
+  ],
+  "scripts": {
+    "test": "bun test tests",
+    "build": "python3 scripts/package.py",
+    "check": "mise run check"
+  },
+  "keywords": [
+    "godot",
+    "playwright",
+    "testing"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aviorstudio/gd-playwright-js.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
